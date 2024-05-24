@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89233235c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header class="contenedor-header">
+            <a href="index.html"> <i class="fa-solid fa-heart header-icon"></i> </a>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav>
+                <!-- lista de navegacion de nav -->
+                <ul class="lista">
+                    <li>
+                        <a href="formulario.html" class="enlace nav-item">
+                            Inicio
+                        </a>
+                        <!-- <a href="index.html#home"> <i class="fa-solid fa-heart"></i> </a>  -->
+                    </li>
+                    <li>
+                        <a href="formulario.html" class="enlace nav-item">
+                            Quienes somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formulario.html" class="enlace nav-item">
+                            Trabajos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formulario.html" class="enlace nav-item">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contenedor-principal">
+                <div class="contenido acerca">
+                    <div class="acerca-de">
+                        <h2>Fiambres para una buena picada</h2>
+                        <p>Puedes elegir entre jamón cocido, jamón crudo, salame picado fino y grueso, mortadela, panceta, bondiola, lomo ahumado, longaniza o leverwurst (salchichas alemanas). Los fiambres pueden ser cortados en fetas, rodajas o cuadrados, y colocados en forma de abanico sobre una tabla de madera. En Sudamérica, más precisamente en Argentina y Uruguay, no pueden faltar los salames o chorizos “de campo”.</p>
+                    </div>
+                    <div class="imagen-acerca">
+                        <img src="img/picada.jpg" alt="imagen personal">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="seccion-2">
+          <img src="img/images.jpg" alt=""/>
+        </section>
+            <!-- seccion con la frase aleatoria -->
+            <section class="contenedor-principal frase">
+                <div class="contenido">
+                    <button id="btn-generar" class="btn-frase">Generar Frase Aleatoria</button>
+                    <div id="footer">
+                        <p id="frase" class="frase-aleatoria"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- inicio del footer -->
+        <footer class="contenedor-principal">
+            <div class="contenido pie-de-pag">
+                <!-- navegacion del footer -->
+                <ul class="lista">
+                    <li>
+                        <a href="formulario.html" class="enlace">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formulario.html" class="enlace">
+                            Quienes somos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formulario.html" class="enlace">
+                            Trabajos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formulario.html" class="enlace">
+                            Servicios
+                        </a>
+                    </li>
+                </ul>
+                <!-- redes sociales del footer -->
+                <ul class="lista">
+                    <li>
+                        <a class="enlace" aria-label="t
+                facebook" href="https://www.facebook.com/selee.munoz.31/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlace" aria-label="github" href="https://github.com/CelesteSelena2022">
+                            <i class="fa-brands fa-github-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlace" aria-label="linkedin"
+                            href="https://www.linkedin.com/in/celeste-selena-mu%C3%B1oz/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="enlace" aria-label="email" href="selenamunoz196@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-footer">
+                    Hecho con ❤️ por jose Cagnoni
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

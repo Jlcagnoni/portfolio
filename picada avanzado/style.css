@@ -1,0 +1,178 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #eeedef;
+}
+@media (max-width: 768px) {
+
+}
+/* --------------------------- estilos para el header --------------------------- */
+
+.enlace{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor-header {
+    background-color: #4f4544;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.lista {
+    display: flex;
+    gap: 2em;
+    margin: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-item {
+    color:white;
+}
+
+/* --------------------------- estilos para el main --------------------------- */
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    padding: 4em 4em;
+}
+
+.contenedor-principal .acerca {
+    min-height: 80vh;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contenedor-principal .contenido .acerca-de {
+    text-align: end;
+}
+
+.contenedor-principal .acerca {
+    display: flex;
+}
+
+.contenido {
+    width: 80%;
+}
+
+.imagen-acerca{
+    padding-left: 2em;
+    width: 80%;
+    height: 50%;
+} 
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------- estilos para la cita --------------------------- */
+
+.btn-frase{
+    font-size: 1em;
+    border: 1px solid rgb(53, 51, 51);
+    padding: 0.5em;
+    border-radius: 15px;
+    color: #4f4544;
+}
+
+.frase{
+    background-color: #4f4544;
+    color: white;
+    text-align: center;
+    min-height: 30vh;
+    margin-bottom: 2em;
+    font-size: 30px;
+}
+
+/* --------------------------- inicio de estilos del footer --------------------------- */
+
+.pie-de-pag {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie-de-pag .lista {
+    margin:0.7em;
+}
+
+.text-footer {
+    margin:0.2em;
+}
+
+/* --------------------------- MENU HAMBURGUESA --------------------------- */
+
+#check {
+    display:none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    line-height: 88px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    /* recorda cambiar .lista por la clase que tengas en ul */
+    nav .lista {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(34, 29, 29);
+        text-align: center;
+
+        /* ajusta la propied top segun el espacio que necesites para que quede bien debajo del nav */
+
+        top: 95px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    /* recorda cambiar .lista por la clase que tengas en ul */
+    #check:checked ~ nav .lista {
+        left: 0;
+        display: block;
+        margin: 0;
+    }
+
+    /* recorda cambiar .contenedor-header por la clase que tengas en header, y  .lista por la clase que tengas en ul */
+    .contenedor-header nav .lista li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    /* recorda cambiar .contenedor-header por la clase que tengas en header, y  .lista por la clase que tengas en ul */
+    .contenedor-header nav .lista li a {
+        font-size: 20px;
+    }
+}
+
+/* --------------------------- FIN DEL MENU HAMBURGUESA --------------------------- */

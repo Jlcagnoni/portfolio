@@ -1,0 +1,135 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #eeedef;
+}
+
+.contenedor-principal {
+    padding: 2em 2em;
+    flex-grow: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* estilos para el header */
+
+.enlace{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor-header {
+    background-color: #4f4544;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-icon {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+.lista {
+    display: flex;
+    gap: 2em;
+    margin: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-item {
+    color:white;
+}
+
+/* --------------------------- inicio de estilos del footer --------------------------- */
+
+
+.pie-de-pag {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie-de-pag .lista {
+    margin:0.7em;
+}
+
+.text-footer {
+    margin:0.2em;
+}
+
+/* --------------------------- inicio de estilos del formulario --------------------------- */
+
+.titulo_seccion {
+    position: relative;
+    font-size: 40px;
+    color: #4f4544;
+    text-align: center;
+    margin: 0.1em;
+    margin-top: 1em;
+    }
+
+    .container {
+    max-width: 35%; /* Define el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 1em; /* Agrega un poco de espacio alrededor del formulario */
+    border: 1px solid black; /* Agrega un borde al contenedor */
+    border-radius: 15px; /* Agrega bordes redondeados al contenedor */
+    }
+
+    .form-group {
+    margin-bottom: 15px; /* Espacio entre cada input */
+    display: flex;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    }
+
+    label {
+    margin-bottom: 5px;
+    width: 13%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+
+    textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+    }
+
+    .form-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        width: 35%;
+        background-color: #8d817f;
+        border-radius: 15px;
+        padding: 1em;
+        margin: 0.5em;
+        display: flex;
+        justify-content: center;
+    }
+
+    button:hover {
+    background-color: #0056b3;
+    }
